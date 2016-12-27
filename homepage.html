@@ -1,0 +1,103 @@
+<!DOCTYPE=HTML>
+<html>
+<head>Lois Resume
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+	<title> resume </title>
+	<link href="base.css" rel="stylesheet" type="text/css" />
+	<!--style type="text/css">
+		h1{
+			font-size:	20px;
+			color:		#930;
+			text-align: center;
+			font-weight: bold;
+		}
+		h2{
+			font-size:	14px;
+			color:		#fff;
+			text-align:	left;
+			font-weight: bold;
+		}
+	</style-->
+
+	<script type="text/javascript">
+		function allowDrop(ev)
+			{
+			ev.preventDefault();
+			}
+
+		function drag(ev)
+			{
+			ev.dataTransfer.setData("Text",ev.target.id);
+			}
+
+		function drop(ev)
+			{
+			ev.preventDefault();
+			var data=ev.dataTransfer.getData("Text");
+			ev.target.appendChild(document.getElementById(data));
+	}
+	</script>
+</head>
+
+<body>
+<h1>
+Lois Resume
+</h1>
+<div id="photo"><img src="" alt="my photo" title="my photo"></div>
+<!--基本信息-->
+<div draggable="true" id=basic>
+	<h2 >Basic infomation</h2>
+	<hr />
+	<ul>
+		<li>Name: Lois Li </li>
+		<li>Telephone: +86 139 1830 2034 </li>
+		<li>Email: <a href="mailto:loislishuhan@163.com">loislishuhan@163.com </a></li>
+		<li>Address: Pudong Shanghai CN </li>
+	</ul>
+</div>
+<!--教育经历-->
+<div draggable="true" id=edu>
+
+	<h2 draggable="true">Education Background</h2>
+	<hr />
+	<p>Time | School Name | Degree | Specialty | Performance | Location</p>
+	<ul>
+	<li>2014.09 - 2015.12	The University of Hong Kong		Master of Science(Computer Science)		Distinction	Hong Kong</li>
+	<li>2010.09 - 2014.06	Beijing University of Posts and Telecommunications		Bachelor of Engineering(Computer Science and Technologies)	Top 20%	Beijing</li>
+	</ul>
+
+</div>
+<!--工作经历-->
+<div draggable="true" id="work">
+	<h2 draggable="true">Work Experience</h2>
+	<hr />
+	<ul>
+	<li id="setGreenId">Time | Company | Occupation |</li>
+	<li>2016.01	Digital Business Service, SAP China	upgrade support	</li>
+	<p>description</p>
+	</ul>
+</div>
+<!--项目经历-->
+<div draggable="true" id="project">
+	<h2 draggable="true">Project Experience</h2>
+	<hr />
+	<ul>
+	<li>akjdf;ldflja;</li>
+	<p class="stress">description</p>
+	</ul>
+</div>
+<!--技能-->
+<div draggable="true" id="skill">
+	<h2 draggable="true">Skills</h2>
+	<hr />
+	<ul>
+	<li>akjdf;ldflja;</li>
+	<p>description</p>
+	</ul>
+</div>
+
+</body>
+
+
+</html>

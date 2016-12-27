@@ -1,0 +1,40 @@
+h1{
+			font-size:	20px;
+			color:		#930;
+			text-align: center;
+			font-weight: bold;
+		}
+h2{
+			font-size:	14px;
+			color:		orange;
+			text-align:	left;
+			font-weight: bold;
+		}
+/*class selecter with .*/
+.stress{
+	font-size:	12px;
+	font-weight:	bold;
+
+}
+/*id selecter with #*/
+#setGreenId{
+	font-color:	red
+}
+div{
+	text-indent: 2em;
+	line-height: 1.5em	;
+	/*word-spacing: :50px;*/
+	width:80%;
+	display:inline-block;
+	text-align:	left;
+	/*padding*/
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom:2em;
+	/*margin*/
+}
+
+li{
+	/*display:inline-block;
+	/* 变成内联块状元素，可以设置元素高度宽度底边距页边距等
+}
